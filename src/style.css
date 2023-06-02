@@ -6,7 +6,6 @@ body {
   background-size: cover;
   height: 40em;
 }
-
 h1 {
   color: #202124;
   font-size: 24px;
@@ -43,7 +42,7 @@ a {
   padding: 20px;
   border: 1px solid #dadee1;
   border-radius: 5px;
-  background-color: #ffffffd1;
+  background-color: #ffffffe6;
 }
 .overview {
   margin-bottom: 20px;
@@ -73,35 +72,47 @@ a {
   text-decoration: none;
 }
 
-.weather-forecast{
+.weather-forecast {
   margin-top: 20px;
   text-align: center;
   color: #000;
 }
-.weather-forecast-date{
+.weather-forecast-date {
   font-size: 16px;
+}
+.weather-forecast-temperature-min {
   opacity: 0.5;
 }
-.weather-forecast-temperature-min{
-  opacity: 0.5;
-}
-.weather-forecast-temperature{
+.weather-forecast-temperature {
   font-size: 13px;
 }
-
-@media screen and (max-width: 500px) {
+#icon {
+  background-color: #d2d5d6;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.icon_daily {
+  background-color: #c0c0bfa3;
+  border-radius: 5px;
+  margin: 10px;
+}
+@media screen and (max-width: 577px) {
   .weather-temperature img {
     width: 50px;
     height: 50px;
     position: relative;
     top: -10px;
-
   }
-
   #temperature {
     font-size: 28px;
   }
   .weather-temperature .units {
     top: 0;
+  }
+  .forecast-top-block {
+    margin: 0 3% 0;
+  }
+  .forecast-daily-block {
+    margin-bottom: 20px;
   }
 }

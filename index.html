@@ -15,6 +15,7 @@
   <div class="container">
     <div class="weather-app-wrapper">
       <div class="weather-app">
+        <div class="forecast-top-block">
         <form id="search-form" class="mb-3">
           <div class="row">
             <div class="col-6 col-sm-9">
@@ -26,7 +27,6 @@
           </div>
         </form>
         <div class="overview">
-
           <h1 id="city"></h1>
           <ul>
             <li>Last updated: <span id="date"></span> </li>
@@ -36,7 +36,7 @@
         <div class="row">
           <div class="col-7 col-sm-6">
             <div class="d-flex weather-temperature">
-              <img alt="clear" id="icon" alt="Clear" id="icon" />
+              <img alt="clear" id="icon" alt="Clear" />
               <div id="temperature-block">
                 <strong id="temperature"></strong>
                 <span class="units"> °C</span>
@@ -50,9 +50,9 @@
             </ul>
           </div>
         </div>
-<div class="weather-forecast" id="forecast">
-
-</div>
+      </div>
+  <div class="weather-forecast" id="forecast">
+  </div>
       </div>
       <small>
         <a href="https://github.com/nadika-zavodovska/vanilla-weather-app" target="_blank">
@@ -61,5 +61,5 @@
       </small>
     </div>
     <script src="src/index.js"></script>
-</body>
-</html>
+  </body>
+  </html>
